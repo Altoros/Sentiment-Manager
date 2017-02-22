@@ -1,0 +1,10 @@
+﻿---
+applications:
+- name: sentimentui
+  disk_quota: 1536M
+  buildpack: https://github.com/cloudfoundry/dotnet-core-buildpack.git
+  services:
+    - config-server
+    - my-user-provided-route-service
+    - rmq
+    - myDiscoveryService
